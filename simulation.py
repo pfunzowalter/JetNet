@@ -9,7 +9,7 @@ from typing import List, Tuple, Optional
 
 class RadioMorphologySimulator:
     """
-    Advanced Radio Source Simulator for SSL Training.
+    Radio Source Simulator for SSL Training.
     """
     def __init__(self, size: int = 128, beam_fwhm: float = 5.0, pixel_scale: float = 1.0):
         self.size = size
@@ -109,7 +109,7 @@ def plot_fifteen(dataset: Dataset):
     print("Saved visualization to samples.png")
 
 if __name__ == "__main__":
-    n_to_generate = 10000 
+    n_to_generate = 30000 
     dataset = MultiViewRadioDataset(n_samples=n_to_generate)
     
     # Generate visualization for the first 15
